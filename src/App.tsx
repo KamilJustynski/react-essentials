@@ -52,11 +52,7 @@ const App = () => {
           <h2>Core Concepts</h2>
           <ul>
             {CORE_CONCEPTS.map((data) => (
-              <CoreConcept
-                title={data.title}
-                description={data.description}
-                image={data.image}
-              />
+              <CoreConcept {...data} />
             ))}
           </ul>
         </section>
