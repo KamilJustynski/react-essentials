@@ -30,3 +30,5 @@ export const CORE_CONCEPTS: CoreConceptInt[] = [
       "React-managed data which, when changed, causes the component to re-render & the UI to update.",
   },
 ];
+
+export const BUTTONS = ["Components", "JSX", "Props", "State"];
