@@ -1,10 +1,16 @@
 import React from "react";
 import { TapButtonInt } from "../types/types";
 
-export const TapButton: React.FC<TapButtonInt> = ({ children, onSelect }) => {
+export const TapButton: React.FC<TapButtonInt> = ({
+  children,
+  onSelect,
+  isSelected,
+}) => {
   return (
     <li>
-      <button onClick={onSelect}>{children}</button>
+      <button className={isSelected ? "active" : undefined} onClick={onSelect}>
+        {children}
+      </button>
     </li>
   );
 };

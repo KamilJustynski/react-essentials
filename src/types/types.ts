@@ -7,6 +7,7 @@ export interface CoreConceptInt {
 export interface TapButtonInt {
   children: string;
   onSelect: () => void;
+  isSelected: boolean;
 }
 
 export interface ExamplesInt {
