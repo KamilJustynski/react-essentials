@@ -1,6 +1,6 @@
 import { CoreConceptInt } from "../types/types";
 
-export const CoreConcept: React.FC<CoreConceptInt> = ({
+const CoreConcept: React.FC<CoreConceptInt> = ({
   image,
   title,
   description,
@@ -13,3 +13,5 @@ export const CoreConcept: React.FC<CoreConceptInt> = ({
     </li>
   );
 };
+
+export default CoreConcept;

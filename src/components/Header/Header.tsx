@@ -7,7 +7,7 @@ function getRandomInt(max: number) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-export const Header = () => {
+const Header = () => {
   const description = reactDescription[getRandomInt(2)];
   return (
     <header>
@@ -20,3 +20,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

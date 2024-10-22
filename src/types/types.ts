@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface CoreConceptInt {
   image: string;
   title: string;
@@ -21,4 +23,15 @@ export interface buttonNameInt {
   title: string;
   description: string;
   code: string;
+}
+
+export interface SectionInt extends React.HTMLAttributes<HTMLElement> {
+  title: string;
+  children: React.ReactNode;
+}
+
+export interface TabsInt {
+  children: React.ReactNode;
+  buttons: React.ReactNode;
+  ButtonsContainer?: React.ElementType;
 }
